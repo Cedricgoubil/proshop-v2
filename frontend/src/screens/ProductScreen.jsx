@@ -9,6 +9,7 @@ import { useGetProductDetailsQuery, useCreateReviewMutation } from '../slices/pr
 import Loader from '../components/Loader'
 import Message from '../components/Message'
 import { addToCart } from '../slices/cartSlice';
+import Meta from '../components/Meta';
 
 const ProductScreen = () => {
   const { id: productId } = useParams();
@@ -63,6 +64,7 @@ const ProductScreen = () => {
           { error?.data?.message || error.error}
           </Message>) : (
           <>
+           <Meta title={product.name}/>
               <Row>
                 <Col md={5}>
                   <Image src={product.image} alt={product.name} fluid/>
