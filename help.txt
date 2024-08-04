@@ -1,0 +1,7 @@
+Render deploy "https://dashboard.render.com" check Travery course "https://www.udemy.com/course/mern-ecommerce/learn/lecture/38107244#overview"
+Note :
+1- Problem with IP adress not connecting to MongoDB Atlas
+ Fix => On dashbiard click Connect => See all IP addreses => Copy & Paste to your Project => Security (Sidebar) => Network access => Add IP address
+
+
+_______________
