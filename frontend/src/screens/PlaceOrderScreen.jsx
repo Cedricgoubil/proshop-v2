@@ -11,9 +11,7 @@ import { clearCartItems } from '../slices/cartSlice';
 
 const PlaceOrderScreen = () => {
   const navigate = useNavigate();
-
   const cart = useSelector((state) => state.cart);
-
   const [createOrder, { isLoading, error }] = useCreateOrderMutation();
 
   useEffect(() => {
