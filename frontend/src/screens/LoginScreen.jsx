@@ -64,14 +64,11 @@ const LoginScreen = () => {
             onChange={(e) => setPassword(e.target.value)}
           ></Form.Control>
         </Form.Group>
-
         <Button disabled={isLoading} type='submit' variant='primary'>
           Sign In
         </Button>
-
         {isLoading && <Loader />}
       </Form>
-
       <Row className='py-3'>
         <Col>
           New Customer?{' '}

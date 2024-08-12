@@ -66,7 +66,6 @@ const Header = () => {
                   <FaUser /> Sign In
                 </Nav.Link>
               )}
-
               {/* Admin Links */}
               {userInfo && userInfo.isAdmin && (
                 <NavDropdown title='Admin' id='adminmenu'>
